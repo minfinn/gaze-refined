@@ -35,6 +35,7 @@ xtrans根据hr和ht，获取对应转换后的图像，注视坐标等参数。
 测试请参考demo_baseline_xgaze和demo_baseline_onetest。在demo_baseline_xgaze中，我将预测结果，旋转矩阵等需要使用的数据保存至gaze_pred.pkl中，result.txt只保存了预测结果。
 
 ## history
-接下来获得history
+接下来获得history，对于图片，demo_baseline_xgaze.py是xgaze的视线向量预测，将history的注视点保存在result.txt里，用于refine；对于视频，vedio_
 
 ## refine
+vedio_gaze_pred_and_refine.py能对视频的预测和修正，refine_pred_new.py是单纯对图片的修正。
