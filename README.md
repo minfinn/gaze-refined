@@ -33,6 +33,7 @@ xtrans根据hr和ht，获取对应转换后的图像，注视坐标等参数。
 ## XGaze baseline
 接下来使用XGaze baseline进行预测。请先下载预训练模型并放入ckpt文件夹[模型下载](https://drive.google.com/file/d/1Ma6zJrECNTjo_mToZ5GKk7EF-0FS4nEC/view)
 测试请参考demo_baseline_xgaze和demo_baseline_onetest。在demo_baseline_xgaze中，我将预测结果，旋转矩阵等需要使用的数据保存至gaze_pred.pkl中，result.txt只保存了预测结果。
+# 修正视线
 
 ## history
 接下来获得history，对于hitory图片，demo_baseline_xgaze.py是xgaze的视线向量预测，将history的注视点保存在result.txt里，用于refine；对于视频，vedio_ori_history_version_1.py实现对history视频的归一化预测。
